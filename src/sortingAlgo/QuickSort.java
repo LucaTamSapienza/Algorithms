@@ -3,6 +3,7 @@ package sortingAlgo;
 import java.util.Arrays;
 
 public class QuickSort {
+    
     // Return the index of the pivot
     public int partition(int[] a, int start, int end){
         // getting as pivot the last element of the array

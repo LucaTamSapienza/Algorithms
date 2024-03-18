@@ -1,6 +1,5 @@
 package sortingAlgo;
 public class MergeSort{
-
     public static void merge(int[] a, int start, int q, int end){
 
         int len_left = q - start + 1;
