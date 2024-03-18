@@ -6,7 +6,7 @@ public class BinarySearch {
     }
 
     private static boolean binary_search_aux(int[] a, int x, int start, int end) {
-        if (start >= end)
+        if (start > end)
             return false;
         int p = (start + end) / 2;
         if (a[p] == x)
