@@ -18,9 +18,10 @@ public class MainClass {
         /*========Merge Sort=========*/
         /*
         System.out.println("=====MergeSort====");
+        MergeSort mergeSort = new MergeSort(a);
         System.out.println("Before sorting = " + Arrays.toString(a));
-        MergeSort.merge_sort(a);
-        System.out.println("After sorting = " + Arrays.toString(a));
+        mergeSort.merge_sort();
+        System.out.println("After sorting = " + mergeSort);
         System.out.println("=====End MergeSort====");
         */
 
@@ -38,7 +39,8 @@ public class MainClass {
         System.out.println("=====BinarySearch====");
         int x = ran.nextInt(20);
         System.out.println("a = " + Arrays.toString(a) + "\nx = " + x);
-        System.out.println(BinarySearch.binary_search(a, x));
+        BinarySearch binarySearch = new BinarySearch();
+        System.out.println(binarySearch.binary_search(a, x));
         System.out.println("=====End BinarySearch====");
         */
     }

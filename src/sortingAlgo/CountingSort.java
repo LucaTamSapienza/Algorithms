@@ -1,7 +1,8 @@
 package sortingAlgo;
 
+// TODO review int[] -> void return statement
 public class CountingSort {
-    public static int[] counting_sort(int[] a, int k){
+    public int[] counting_sort(int[] a, int k){
         int[] ris = new int[a.length];
         int[] c = new int[k];
         for (int j : a) c[j] += 1;

@@ -1,11 +1,11 @@
 package searchAlgo;
 
 public class BinarySearch {
-    public static boolean binary_search(int[] a, int x){
+    public boolean binary_search(int[] a, int x){
         return binary_search_aux(a, x, 0, a.length - 1);
     }
 
-    private static boolean binary_search_aux(int[] a, int x, int start, int end) {
+    private boolean binary_search_aux(int[] a, int x, int start, int end) {
         if (start > end)
             return false;
         int p = (start + end) / 2;

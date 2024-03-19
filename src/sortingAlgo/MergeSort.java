@@ -1,6 +1,11 @@
 package sortingAlgo;
 public class MergeSort{
-    public static void merge(int[] a, int start, int q, int end){
+    private int[] array;
+
+    public MergeSort(int[] array){
+        this.array = array;
+    }
+    public void merge(int[] a, int start, int q, int end){
 
         int len_left = q - start + 1;
         int len_right = end - q;
@@ -40,7 +45,7 @@ public class MergeSort{
 
     }
 
-    public static void merge_sort_aux(int[] a, int start, int end){
+    public void merge_sort_aux(int[] a, int start, int end){
         if (start >= end)
             return;
         int q = (start + end) / 2;
@@ -52,9 +57,22 @@ public class MergeSort{
 
     }
 
-    public static void merge_sort(int[] a){
-        merge_sort_aux(a, 0, a.length-1);
+    public void merge_sort(){
+        merge_sort_aux(array, 0, array.length-1);
         return;
+    }
+
+    @Override
+    public String toString(){
+        String ris = "[";
+        for (int i = 0; i < array.length; i++){
+            if (i == array.length - 1){
+                ris += array[i] + "]";
+                break;
+            }
+            ris += array[i] + ", ";
+        }
+        return ris;
     }
 
 }
