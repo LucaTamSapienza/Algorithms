@@ -8,7 +8,7 @@ public class CountingSort {
         for (int j : a) c[j] += 1;
         for (int i = 1; i < k; i++)
             c[i] += c[i-1];
-        for (int i = a.length; i > 0; i--){
+        for (int i = a.length - 1; i > 0; i--){
             ris[c[a[i]]] = a[i];
             c[a[i]] -= 1;
         }
